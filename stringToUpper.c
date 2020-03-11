@@ -1,0 +1,24 @@
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
+char string[50] = "ryan is pretty cool";
+char sub[1000];
+char* upper();
+int main() {
+	printf("%s", upper());
+}
+char* upper() {
+	int c = 0;
+	while(c < 19){
+		if(c == 0){
+			sub[c] = toupper(string[c]);
+			c++;
+			continue;
+		}
+		else{
+		        sub[c] = string[c];
+		        c++;
+	}}
+	sub[c] = '\0';	
+	return sub;
+}
